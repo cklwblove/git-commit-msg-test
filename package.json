@@ -1,0 +1,38 @@
+{
+  "name": "git-commit-msg-test",
+  "version": "0.0.1",
+  "description": "Submit your Commit message elegantly",
+  "scripts": {
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verify-commit-msg.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "commitizen": "^2.10.1",
+    "conventional-changelog": "^2.0.1",
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cklwblove/git-commit-msg-test.git"
+  },
+  "keywords": [
+    "git",
+    "commit"
+  ],
+  "author": "liwb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cklwblove/git-commit-msg-test/issues"
+  },
+  "homepage": "https://github.com/cklwblove/git-commit-msg-test#readme"
+}
