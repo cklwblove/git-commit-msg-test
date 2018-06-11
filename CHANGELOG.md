@@ -2,6 +2,11 @@
 ## 0.0.1 (2018-06-11)
 
 
+### Bug Fixes
+
+* **package.json `npm run changelog` modify:** package.json `npm run changelog` modify ([dc0d81c](https://github.com/cklwblove/git-commit-msg-test/commit/dc0d81c))
+
+
 ### Features
 
 * Generate changelog.md ([ab8498e](https://github.com/cklwblove/git-commit-msg-test/commit/ab8498e))
