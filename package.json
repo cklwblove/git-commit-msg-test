@@ -4,7 +4,8 @@
   "description": "Submit your Commit message elegantly",
   "scripts": {
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "pretest": "semistandard",
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
